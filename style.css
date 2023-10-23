@@ -1,0 +1,68 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Verdana', sans-serif;
+  font-size: 2em;
+  color: #ffec05; /* Neon Yellow */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  width: 310px;
+  background-color: #000;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff; /* White */
+  border-radius: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #000;
+  transition: background-color 0.2s;
+  color: #ffec05; /* Neon Yellow */
+}
+
+.cell:hover {
+  background-color: #111; /* Slightly darker shade */
+}
+
+#restart-button {
+  background-color: #ffec05; /* Neon Yellow */
+  color: #000; /* Pitch Black */
+  font-size: 1.2em;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+  font-weight: bold;
+}
+
+#restart-button:hover {
+  background-color: #ffdb58; /* Lighter shade of Neon Yellow */
+}
+
+#winner {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffec05; /* Neon Yellow */
+  margin-top: 10px;
+}
